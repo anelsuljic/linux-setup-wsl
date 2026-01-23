@@ -3,10 +3,10 @@
 
 # Installation and removal of packages
 
-INSTALL_LIST="$HOME/linux-setup/setups/setup-apps/install-list.txt"
-INSTALL_LIST_TMP="$HOME/linux-setup/setups/setup-apps/install-list.tmp"
-REMOVE_LIST="$HOME/linux-setup/setups/setup-apps/remove-list.txt"
-REMOVE_LIST_TMP="$HOME/linux-setup/setups/setup-apps/remove-list.tmp"
+INSTALL_LIST="$HOME/<linux-setup-dir>/setups/setup-apps/install-list.txt"
+INSTALL_LIST_TMP="$HOME/<linux-setup-dir>/setups/setup-apps/install-list.tmp"
+REMOVE_LIST="$HOME/<linux-setup-dir>/setups/setup-apps/remove-list.txt"
+REMOVE_LIST_TMP="$HOME/<linux-setup-dir>/setups/setup-apps/remove-list.tmp"
 
 install_pkg() {
     for pkg in "$@"; do                 

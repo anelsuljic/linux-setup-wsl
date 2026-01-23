@@ -14,5 +14,6 @@ printf '%*s\n\n\n\n\n\n' 40 '' | tr ' ' '-'
 cat "$SETUP_BASH" >> "$BASHRC"
 source "$BASHRC"
 
-echo "Note: remember to change the name of your ssh key on section"\
+echo "Note 1: remember to change the name of your ssh key on section"\
      "#Autostart ssh from .bashrc"
+echo "Note 2: on section # Installation and removal of packages from .bashrc, remember to update <linux-setup-dir> with the actual directory where the repository of linux setup is locally stored"
