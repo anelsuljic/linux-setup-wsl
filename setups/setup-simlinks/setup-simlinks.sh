@@ -11,3 +11,4 @@ echo "Creating simbolic link for google drive directory ..."
 sudo mkdir -p /mnt/g
 sudo mount -t drvfs G: /mnt/g
 ln -s /mnt/g/My\ Drive /home/vfxanel/gdrive
+echo "Be sure to add the following line at /etc/fstab: G: /mnt/g drvfs defaults 0 0"
