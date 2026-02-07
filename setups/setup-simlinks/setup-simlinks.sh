@@ -12,3 +12,6 @@ sudo mkdir -p /mnt/g
 sudo mount -t drvfs G: /mnt/g
 ln -s /mnt/g/My\ Drive /home/vfxanel/gdrive
 echo "Be sure to add the following line at /etc/fstab: G: /mnt/g drvfs defaults 0 0"
+
+echo -e "\n\n\nCreating simbolic link for downloads directory ..."
+ln -s /mnt/c/Users/vfxanel/Downloads /home/vfxanel/downloads
