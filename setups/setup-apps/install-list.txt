@@ -6,4 +6,5 @@ nano
 openssh
 sudo
 swi-prolog
+unzip
 zip
