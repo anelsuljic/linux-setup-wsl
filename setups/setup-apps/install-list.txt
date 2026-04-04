@@ -7,4 +7,5 @@ openssh
 sudo
 swi-prolog
 unzip
+wget
 zip
