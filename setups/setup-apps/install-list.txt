@@ -3,6 +3,7 @@ keychain
 kompare
 man
 nano
+numactl
 openssh
 sudo
 swi-prolog
