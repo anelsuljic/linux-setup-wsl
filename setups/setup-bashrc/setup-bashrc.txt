@@ -76,3 +76,6 @@ alias g17++='g++ -ansi -O2 -DNDEBUG -D_GLIBCXX_DEBUG -Wall -Wextra -Werror -Wno-
 
 # Autostart ssh
 eval $(keychain --eval --quiet ssh_key_name)
+
+# Other aliases
+alias copy='clip.exe'
