@@ -21,5 +21,6 @@ To install arch linux on WSL, it is necessary to execute `wsl --install archlinu
     - Edit the file `/etc/locale.gen` and uncomment the locale you want.
     - Execute `locale-gen`.
 
+3. Continue the setup at the [official arch linux installation guide for WSL2](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL).
 
-3. Clone this repository and execute `bash setup.sh`. Note that you will need to have `yay` package preinstalled.
+4. Clone this repository and execute `bash setup.sh`. Note that you will need to have `yay` package preinstalled.
