@@ -59,7 +59,7 @@
           "trailing_diamond": "\ue0b4",
           "options": {
             "cache_duration": "none",
-            "style": "full"
+            "style": "agnoster_short"
           }
         }
       ]
@@ -72,8 +72,8 @@
           "type": "git",
           "style": "diamond",
           "foreground": "p:color13",
-          "background": "#ffb86c",
-          "template": "\ue725 ({{ url .UpstreamIcon .UpstreamURL }} {{ url .HEAD .UpstreamURL }}){{ if gt .Ahead 0 }}<#50fa7b> +{{ .Ahead }}</>{{ end }}{{ if gt .Behind 0 }}<#ff5555> -{{ .Behind }}</>{{ end }}{{ if .Working.Changed }}<p:color15> \uf044 {{ .Working.String }}</>{{ end }}{{ if .Staging.Changed }}<p:color15> \uf046 {{ .Staging.String }}</>{{ end }}",
+          "background": "#ffffff",
+          "template": "\ue725 ({{ url .UpstreamIcon .UpstreamURL }} {{ url .HEAD .UpstreamURL }}){{ if gt .Ahead 0 }}<#000000> +{{ .Ahead }}</>{{ end }}{{ if gt .Behind 0 }}<#000000> -{{ .Behind }}</>{{ end }}{{ if .Working.Changed }}<#000000> \uf044 {{ .Working.String }}</>{{ end }}{{ if .Staging.Changed }}<#000000> \uf046 {{ .Staging.String }}</>{{ end }}",
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b4",
           "options": {
@@ -141,8 +141,8 @@
           "style": "diamond",
           "powerline_symbol": "\ue0b0",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
-          "foreground": "p:color15",
-          "background": "#6272a4",
+          "foreground": "#000000",
+          "background": "#ffdd00",
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b4"
         },
@@ -191,7 +191,7 @@
     "newline": true
   },
   "palette": {
-    "color0": "#1a110f",
+    "color0": "#11111b",
     "color1": "",
     "color2": "",
     "color3": "",
@@ -201,11 +201,11 @@
     "color7": "",
     "color8": "",
     "color9": "",
-    "color10": "#ffb59d",
+    "color10": "#74c7ec",
     "color11": "",
     "color12": "",
-    "color13": "#390c00",
+    "color13": "#1e1e2e",
     "color14": "",
-    "color15": "#f1dfda"
+    "color15": "#cdd6f4"
   }
 }
