@@ -1,7 +1,7 @@
 # Installation of packages
 
-INSTALL_LIST="$HOME/Documents/git-repos/linux-setup/setups/setup-apps/install-list.txt"
-INSTALL_LIST_TMP="$HOME/Documents/git-repos/linux-setup/setups/setup-apps/install-list.tmp"
+INSTALL_LIST="$HOME/Documents/git-repos/linux-setup-wsl/setups/setup-apps/install-list.txt"
+INSTALL_LIST_TMP="$HOME/Documents/git-repos/linux-setup-wsl/setups/setup-apps/install-list.tmp"
 
 install_pkg() 
 {
@@ -43,7 +43,7 @@ alias g17++='g++ -ansi -O2 -DNDEBUG -D_GLIBCXX_DEBUG -Wall -Wextra -Werror -Wno-
 
 
 # VPNs
-alias vpn-upc='sudo openfortivpn myupclink.upc.edu:443 --saml-login'
+# alias vpn-upc='sudo openfortivpn myupclink.upc.edu:443 --saml-login'
 
 
 # ANTLR4 setup
@@ -63,35 +63,6 @@ alias ssh='TERM=xterm-256color ssh.exe'
 alias ssh-add='ssh-add.exe'
 alias scp='scp.exe'
 
-
-# Prints the dgpu status. Turned on = D0. Turned off = D3cold.
-dgpu() 
-{
-    local d=/sys/bus/pci/devices/0000:01:00.0
-    printf 'dGPU: power=%s runtime=%s control=%s\n' \
-        "$(<"$d/power_state")" "$(<"$d/power/runtime_status")" "$(<"$d/power/control")"
-}
-
-# Prints what has the dgpu open, root processes included.
-dgpu-users()
-{
-    sudo fuser -v /dev/nvidia* /dev/dri/by-path/pci-0000:01:00.0-*
-}
-
-# Virtualization
-export LIBVIRT_DEFAULT_URI=qemu:///system
-
-act-vm-env()
-{
-    touch -f ~/.config/hypr/igpu-only
-    echo -e "Log out and re-log in to apply changes."
-}
-
-des-vm-env()
-{
-    rm -f ~/.config/hypr/igpu-only
-    echo -e "Log out and re-log in to apply changes."
-}
 
 # Python
 act-penv() {
@@ -115,3 +86,6 @@ act-penv() {
         return 1
     fi
 }
+
+THEME_PATH="$HOME/Documents/git-repos/linux-setup-wsl/setups/setup-oh-my-posh/files/themes/"
+eval "$(oh-my-posh init bash --config $THEME_PATH/theme-1.json)"
