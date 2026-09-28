@@ -58,7 +58,7 @@ alias grun='java org.antlr.v4.gui.TestRig'
 
 
 # Other aliases
-alias copy='wl-copy'
+alias copy='clip.exe'
 alias ssh='TERM=xterm-256color ssh.exe'
 alias ssh-add='ssh-add.exe'
 alias scp='scp.exe'
